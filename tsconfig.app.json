@@ -21,11 +21,29 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
+      "@app-assets": [
+        "src/assets"
+      ],
+      "@app-assets/*": [
+        "src/assets/*"
+      ],
       "@app-components": [
         "src/components"
       ],
       "@app-components/*": [
         "src/components/*"
+      ],
+      "@app-hooks": [
+        "src/hooks"
+      ],
+      "@app-hooks/*": [
+        "src/hooks/*"
+      ],
+      "@app-utils": [
+        "src/utils"
+      ],
+      "@app-utils/*": [
+        "src/utils/*"
       ]
     },
     /* Linting */

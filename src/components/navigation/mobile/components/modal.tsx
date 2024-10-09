@@ -3,6 +3,7 @@ import Container from '@app-components/container'
 import { forwardRef } from 'react'
 import NavigationItem from './item'
 import { NavigationDetails } from '@app-utils'
+import AuthButtons from './auth-buttons'
 
 type Props = {
     disabled: boolean
@@ -20,11 +21,13 @@ export const Modal = forwardRef<HTMLDialogElement, Props>((props, ref) => {
                     <img src={Icons.IconCloseMenu} alt="Close Menu" />
                 </button>
 
-                <ul className='flex flex-col gap-4'>
+                <ul className='flex flex-col gap-4 mb-8'>
                     {NavigationDetails.map((item, key) => (
                         <NavigationItem item={item} key={key} />
                     ))}
                 </ul>
+
+                <AuthButtons />
             </Container>
         </dialog>
     )

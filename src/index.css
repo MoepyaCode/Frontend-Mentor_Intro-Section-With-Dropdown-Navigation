@@ -1,6 +1,24 @@
 /* Add Google fonts below */
-
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .heading-l {
+        @apply font-bold text-[80px] leading-[80px] tracking-[-1.11px]
+    }
+
+    .body-m {
+        @apply font-medium text-[18px] leading-[28px] space-y-[1px]
+    }
+
+    .body-s {
+        @apply font-medium text-[14px] leading-[16px] space-y-[1px]
+    }
+
+    .button {
+        @apply font-bold text-[18px] leading-[28px] tracking-[-0.25px] space-y-[1px]
+    }
+}

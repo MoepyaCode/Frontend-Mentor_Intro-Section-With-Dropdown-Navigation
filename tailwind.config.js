@@ -8,7 +8,19 @@ export default {
     backgroundColor: theme => ({
       ...theme('colors'),
     }),
-    extend: {},
+    extend: {
+      colors: {
+        white: {
+          almost: '#FAFAFA',
+          pure: '#FFFFFF'
+        },
+        grey: {
+          light: '#ADADAD',
+          medium: '#686868'
+        },
+        black: '#151515'
+      }
+    },
   },
   plugins: [],
 }

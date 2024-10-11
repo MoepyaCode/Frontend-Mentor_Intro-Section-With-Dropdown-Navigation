@@ -19,7 +19,7 @@ export function Mobile() {
     }
 
     return (
-        <Wrapper className='flex justify-between p-4 pb-0'>
+        <Wrapper className='flex justify-between p-4 pb-0 md:px-10 md:pt-6'>
             <img className='object-contain' src={Logo} alt="Snap Logo" />
             <button disabled={disabled} onClick={() => handleMenu()}>
                 <img className='object-contain' src={Icons.IconMenu} alt="Menu" />

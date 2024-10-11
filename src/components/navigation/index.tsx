@@ -20,7 +20,7 @@ export default function Navigation(props: Props) {
     }
     
     return (
-        <nav className="w-full">
+        <nav className="w-screen">
             {renderNavigation()}
         </nav>
     )

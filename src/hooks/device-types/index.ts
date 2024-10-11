@@ -12,7 +12,7 @@ export function useDeviceType() {
     }, [])
 
     useEffect(() => {
-        if (width >= 780) {
+        if (width >= 1024) {
             setDeviceType('desktop')
         } else {
             setDeviceType('mobile')
